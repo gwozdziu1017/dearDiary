@@ -11,10 +11,22 @@
 *	Created by dgwo 12.04.2020
 */
 
+#include <iostream>
+
 class FileHandler
 {
 public:
 	FileHandler();
 	~FileHandler();
+
+	static bool openStream();
+	static bool saveToFile();
+	static bool closeFile();
+	static void setDefaultFilePath();
+
+protected:
+	static std::FILE* stream;
+	static char filePath[];
+
 };
 #endif _FILE_HANDLER_H

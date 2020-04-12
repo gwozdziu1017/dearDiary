@@ -6,6 +6,7 @@
 *	Class responsible for diary functionalities itself:
 *		* put input
 *		* save
+*		* delete
 *
 *	Created by dgwo 12.04.2020
 */
